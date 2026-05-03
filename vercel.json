@@ -1,28 +1,12 @@
 {
-  "buildCommand": "npx expo export:web",
+  "buildCommand": "npm run export:web",
   "outputDirectory": "web",
-  "devCommand": "npx expo start",
-  "installCommand": "npm install",
+  "devCommand": "expo start",
   "framework": "expo",
   "rewrites": [
     {
-      "source": "/api/:path*",
-      "destination": "/api/:path*"
-    },
-    {
       "source": "/(.*)",
       "destination": "/index.html"
-    }
-  ],
-  "headers": [
-    {
-      "source": "/static/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
-        }
-      ]
     }
   ]
 }
