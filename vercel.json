@@ -1,6 +1,6 @@
 {
-  "buildCommand": "npm install && npm run export:web",
-  "outputDirectory": "web",
+  "buildCommand": "npm install && npx expo export --platform web",
+  "outputDirectory": "dist",
   "rewrites": [
     {
       "source": "/(.*)",

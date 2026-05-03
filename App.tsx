@@ -20,8 +20,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import * as Haptics from 'expo-haptics';
 import { Camera, Upload, Play, Pause, RefreshCw, Sparkles, Briefcase, ShoppingBag, Scale, User, Wrench } from 'lucide-react-native';
 
-import HolographicBackground, { HolographicCard } from './HolographicEngine';
-import NeuralLoader from './NeuralLoader';
+import HolographicBackground, { HolographicCard } from './src/components/HolographicEngine';
+import NeuralLoader from './src/components/NeuralLoader';
 
 const { width, height } = Dimensions.get('window');
 const API_URL = 'http://69.62.68.67:3000';
