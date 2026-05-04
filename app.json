@@ -1,8 +1,8 @@
 {
-  "expo": {
-    "name": "Charlie",
-    "slug": "charlie",
-    "version": "1.0.0",
+ "expo": {
+ "name": "SAHJONY",
+ "slug": "sahjony",
+ "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -12,16 +12,16 @@
       "resizeMode": "contain",
       "backgroundColor": "#0f172a"
     },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.charlie.videoai"
-    },
-  "android": {
-    "adaptiveIcon": {
-      "foregroundImage": "./assets/adaptive-icon.png",
-      "backgroundColor": "#0f172a"
-    },
-    "package": "com.charlie.videoai",
+ "ios": {
+ "supportsTablet": true,
+ "bundleIdentifier": "com.sahjony.videoai"
+ },
+ "android": {
+ "adaptiveIcon": {
+ "foregroundImage": "./assets/adaptive-icon.png",
+ "backgroundColor": "#0f172a"
+ },
+ "package": "com.sahjony.videoai",
     "edgeToEdgeEnabled": true,
     "predictiveBackGestureEnabled": false,
     "permissions": [

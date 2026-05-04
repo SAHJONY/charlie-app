@@ -184,7 +184,7 @@ export default function App() {
  {/* Header */}
  <View style={styles.header}>
  <Text style={styles.title}>
- <Sparkles size={24} color={selectedColor} /> Charlie
+ <Sparkles size={24} color={selectedColor} /> SAHJONY
  </Text>
  <Text style={styles.subtitle}>Universal AI Video Engine</Text>
  
