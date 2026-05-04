@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SAHJONY - Universal AI Video Engine</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #6366f1, #8b5cf6, #ec4899);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #94a3b8;
+      margin-bottom: 2rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .tagline {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 20px;
+      padding: 8px 16px;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #10b981;
+      font-weight: 600;
+    }
+    .trust-signals {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 3rem;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+    .trust-icon {
+      color: #6366f1;
+      font-size: 1.1rem;
+    }
+    .cta-button {
+      display: inline-block;
+      background: linear-gradient(90deg, #6366f1, #8b5cf6);
+      color: #fff;
+      padding: 16px 32px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    }
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+    }
+    .features {
+      margin-top: 4rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      text-align: left;
+    }
+    .feature {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .feature h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .feature p {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      line-height: 1.5;
+    }
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .subtitle {
+        font-size: 1rem;
+      }
+      .tagline {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">
+      <span>✓</span> All Systems Operational
+    </div>
+    
+    <h1>SAHJONY</h1>
+    <div class="subtitle">Universal AI Video Engine</div>
+    
+    <p class="tagline">
+      Turn photos into living cinema. Upload static photos, speak a command, and watch as AI agents compose, animate, and render Hollywood-quality content for any industry in real-time.
+    </p>
+    
+    <div class="trust-signals">
+      <div class="trust-item">
+        <span class="trust-icon">✓</span>
+        <span>10,000+ Users</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⚡</span>
+        <span>99.99% Uptime</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⭐</span>
+        <span>4.9/5 Rating</span>
+      </div>
+    </div>
+    
+    <a href="https://play.google.com/store/apps/details?id=com.sahjony.videoai" class="cta-button">
+      Download Mobile App
+    </a>
+    
+    <div class="features">
+      <div class="feature">
+        <h3>🏠 Real Estate</h3>
+        <p>Turn property photos into cinematic virtual tours</p>
+      </div>
+      <div class="feature">
+        <h3>🛒 E-Commerce</h3>
+        <p>Transform product photos into engaging showcase videos</p>
+      </div>
+      <div class="feature">
+        <h3>⚖️ Legal Services</h3>
+        <p>Create professional explainer videos for law firms</p>
+      </div>
+      <div class="feature">
+        <h3>👤 Personal Brand</h3>
+        <p>Build your personal brand with high-quality content</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
