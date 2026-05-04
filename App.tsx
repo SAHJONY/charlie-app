@@ -181,18 +181,21 @@ export default function App() {
       <Animated.View style={[styles.content, { opacity: fadeAnim }]}>
         <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
           
-          {/* Header */}
-          <View style={styles.header}>
-            <Text style={styles.title}>
-              <Sparkles size={24} color={selectedColor} /> Charlie
-            </Text>
-            <Text style={styles.subtitle}>AI Video Engine</Text>
-          </View>
+ {/* Header */}
+ <View style={styles.header}>
+ <Text style={styles.title}>
+ <Sparkles size={24} color={selectedColor} /> Charlie
+ </Text>
+ <Text style={styles.subtitle}>Universal AI Video Engine</Text>
+ </View>
 
-          {/* Industry Selector */}
-          <HolographicCard>
-            <Text style={styles.sectionTitle}>Select Industry</Text>
-            <View style={styles.industryGrid}>
+ {/* Industry Selector */}
+ <HolographicCard>
+ <Text style={styles.sectionTitle}>Select Industry</Text>
+ <Text style={styles.sectionDescription}>
+ The AI will automatically adapt to {selectedIndustry.toLowerCase()} workflows.
+ </Text>
+ <View style={styles.industryGrid}>
               {INDUSTRIES.map((ind) => (
                 <TouchableOpacity
                   key={ind.id}
@@ -214,10 +217,23 @@ export default function App() {
             </View>
           </HolographicCard>
 
-          {/* Upload Zone */}
-          <HolographicCard>
-            <Text style={styles.sectionTitle}>Input Photo</Text>
-            {imageUri ? (
+ {/* Upload Zone */}
+ <HolographicCard>
+ <Text style={styles.sectionTitle}>
+ {selectedIndustry === 'Real Estate' ? 'Property Photos' :
+  selectedIndustry === 'E-Commerce' ? 'Product Images' :
+  selectedIndustry === 'Legal Services' ? 'Documents & Photos' :
+  selectedIndustry === 'Personal Brand' ? 'Selfies & Clips' :
+  'Project Assets'}
+ </Text>
+ <Text style={styles.sectionDescription}>
+ {selectedIndustry === 'Real Estate' ? 'Turn property photos into cinematic tours.' :
+  selectedIndustry === 'E-Commerce' ? 'Transform product photos into engaging demos.' :
+  selectedIndustry === 'Legal Services' ? 'Create professional explainer videos.' :
+  selectedIndustry === 'Personal Brand' ? 'Build your brand with high-quality content.' :
+  'Manage multiple client projects from one dashboard.'}
+ </Text>
+ {imageUri ? (
               <View style={styles.imagePreview}>
                 <Image source={{ uri: imageUri }} style={styles.previewImage} />
                 <TouchableOpacity
@@ -326,14 +342,20 @@ const styles = StyleSheet.create({
     textTransform: 'uppercase',
     marginTop: 5,
   },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: '700',
-    color: '#fff',
-    marginBottom: 16,
-    letterSpacing: 0.5,
-  },
-  industryGrid: {
+ sectionTitle: {
+ fontSize: 18,
+ fontWeight: '700',
+ color: '#fff',
+ marginBottom: 8,
+ letterSpacing: 0.5,
+ },
+ sectionDescription: {
+ fontSize: 14,
+ color: '#94a3b8',
+ marginBottom: 16,
+ lineHeight: 20,
+ },
+ industryGrid: {
     flexDirection: 'row',
     flexWrap: 'wrap',
     gap: 10,

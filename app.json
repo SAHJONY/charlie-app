@@ -16,15 +16,24 @@
       "supportsTablet": true,
       "bundleIdentifier": "com.charlie.videoai"
     },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#0f172a"
-      },
-      "package": "com.charlie.videoai",
-      "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/adaptive-icon.png",
+      "backgroundColor": "#0f172a"
     },
+    "package": "com.charlie.videoai",
+    "edgeToEdgeEnabled": true,
+    "predictiveBackGestureEnabled": false,
+    "permissions": [
+      "android.permission.CAMERA",
+      "android.permission.RECORD_AUDIO",
+      "android.permission.INTERNET",
+      "android.permission.ACCESS_NETWORK_STATE"
+    ],
+    "config": {
+      "usesCleartextTraffic": true
+    }
+  },
     "web": {
       "favicon": "./assets/favicon.png",
       "bundler": "metro"
